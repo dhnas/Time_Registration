@@ -1,0 +1,87 @@
+.etn{
+    font-size: 18px;
+}
+
+.stn{
+    font-size: 16px;
+}
+
+.vl {
+    border-left: 6px solid ;
+    // display: inline;
+}
+
+.hi1{
+    height: 10vh;
+  }
+  
+  .hi2{
+    height: 16vh;
+  }
+  
+  .hi3{
+    height: 13vh;
+  }
+
+  .date-slide {
+    padding: 10px;
+    text-align: center;
+    // border: 1px solid #ccc;
+  }
+  
+  /* Customize carousel control icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  /* Make the carousel control icons black */
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(1); /* Invert the color to black */
+  }
+
+  .previous{
+    position: absolute;
+    top: 0%;
+    left: 8%;
+    bottom: 50%;
+  }
+
+  .next{
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    bottom: 27%;
+  }
+
+.warn{
+    background-color: rgba(205, 164, 87, 0.2);
+
+}
+
+.warn-mar{
+    margin-left: 2%;
+    margin-top: 1%;
+   
+}
+
+.card11{
+    position: relative;
+}
+
+.card12{
+    position: absolute;
+    top: 40%;
+    left: 88%;  
+}
+
+.card13{
+    
+    position: fixed;
+    z-index: 1;
+    top: 92%;
+    left:96%;
+    
+}

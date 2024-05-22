@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EG legal</title>
+    <link rel="icon" href="./img/getsitelogo1.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="overview.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div class="row shadow col1">
+                <div class="col-2"> <img src="https://global.eg.dk/siteassets/media/logos/eg-logo.svg" alt="eg logo"> </div>
+                <div class="col"> <p>Legal Solutions</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-house-fill"></i> </div>
+                <div class="col"> <p>Home</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-plus-circle"></i> </div>
+                <div class="col"> <p>Register Time</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-calendar"></i> </div>
+                <div class="col"> <p>Calender</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-bar-chart"></i> </div>
+                <div class="col"> <p>Overview</p></div>
+              </div>
+              <ul class=" navbar-nav flex-column" style="margin-top: 350px; margin-left: 1px;">
+              <div class="row col1 merge">
+                <div class="col-2"> <i class="bi bi-bell-fill"></i> </div>
+                <div class="col"> <p>Notification<sup>3</sup></p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-person-circle"></i> </div>
+                <div class="col"> <p>Camline Jansen</p> </div>
+              </div>
+             
+        </div> 
+        <div class="col-9">
+            <button style="color: #001F3F; margin-left: 350px; font-weight: 500; size: 16px;" class="btn dropdown-toggle " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Today
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <form >
+                        <input type="date" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <img src="trash-fill.svg" class="float-end me-2" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                  <div class="modal-dialog justify-content-center">
+                    <div class="modal-content justify-content-center ">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="confirmModalLabel">  Are you sure you want to delete the ongoing time registration?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-secondary">
+                      The ongoing time registration will be stopped and deleted
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn  ">YES</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-secondary fs-6 mt-5">From<br/>14:50:20</p>
+                    </div>
+                    
+                    <div class="col-6">
+                        <img src="pause-circle-fill.svg" class="mt-5 float-end">
+                    </div>
+                </div>
+ 
+                <div class="row">
+                  <div class="col-4">
+                    <p class="text-secondary fs-6 mt-5 ms-2">Status</p>
+                    <div class="cards bg-white billable">
+                      <div class="card-body" ></div>
+                    </div>
+                    <p class="ms-3 billable_text " style="border-left: 3px solid rgb(87, 87, 217);" >Billable</p>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                  <div class="col-4 mt-4">
+                    <h6 class="float-end me-3 mt-5 text-info">Add to registration</h6>
+                    <!-- <img  src="folder-plus.svg " class="float-end mt-5 me-2"> -->
+                    <p data-bs-toggle="modal" data-bs-target="#registerModal"><i class="bi bi-folder-plus text-info float-end mt-5 me-2 "  ></i></p>
+                  </div>
+                  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg ">
+                      <div class="modal-content border-0">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title text-center align-middle" id="registerModalLabel">Add to registration</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+ 
+                        <div class="modal-body  border-0">
+                            <div class="car border-0 text-center">
+                                <p class="align-middle text-secondary fs-4"><i class="bi bi-caret-left"></i> 15.11.2023 <i class="bi bi-caret-right"></i></p>
+                              </div>
+         
+                       
+                            <div class="container-fluid ">
+                            <div class="cards mt-5 row shadow col1">
+                                <div class="card-body" style="border-left: 5px solid orange;">
+                                  <ul class="lf float-start">
+                                    <div class="vl hi1 me-1 border-warning float-start"></div>
+                                  <h5 class="card-title fs-5"><b>13:00 - 14:15</b></h5>
+                                  <p class="card-text text-warning">Missing Information<br/></p>
+                                  </ul>
+                                    <ul class="rt float-end pt-6">
+                                        <div>
+                                        <p>02:24</p>
+                                        </div>
+                                    </ul>
+                                </div>
+                              </div>
+ 
+                              <div class="cards mt-4 row shadow col1">
+                                <div class="card-body" style="border-left: 5px solid blue;">
+                                  <ul class="lf float-start">
+                                    <div class="vl hi2 me-1 border-info float-start" ></div>
+                                    <h5 class="card-title fw-bold fs-5">12:10 - 12:58 / 15:40 - 16:00</h5>
+                                    <p class="card-text">
+                                        13446 - O.Jeppesen <br />
+                                        Court Hearing - Being present at c.. <br />
+                                        <i class="bi bi-folder-plus"></i> 2 registrations
+                                    </p>
+                                  </ul>
+                                  <ul class="rt float-end pt-6">
+                                    <div>
+                                      <p>01:08</p>
+                                    </div>
+                                  </ul>
+                                </div>
+                              </div>
+                     
+                              <div class="cards mt-4 row shadow col1">
+                                <div class="card-body" style="border-left: 5px solid blue;" >
+                                  <ul class="lf float-start">
+                                    <div class="vl hi3 me-1 border-info float-start"></div>
+                                  <h5 class="card-title fw-bold fs-5">12:10 - 12:58</h5>
+                                  <p class="card-text">
+                                    13446 - O.Jeppesen <br />
+                                    Court Hearing - Being present at c.. <br />
+                                  </p>
+                                </ul>
+                                <ul class="rt float-end pt-6" >
+                                  <div>
+                                    <p>00:48</p>
+                                  </div>
+                                </ul>
+                                </div>
+                               </div>
+                             
+                     
+                              <div class="cards mt-4 row shadow col1">
+                                <div class="card-body" style="border-left: 5px solid blue;">
+                                  <ul class="lf float-start pt-6">
+                                    <div class="vl hi3 me-1 border-info float-start"></div>
+                                  <h5 class="card-title fw-bold fs-5">12:10 - 12:58</h5>
+                                  <p class="card-text">
+                                    13446 - O.Jeppesen <br />
+                                    Court Hearing - Being present at c.. <br />
+                                  </p>
+                                  </ul>
+                                  <ul class="rt float-end">
+                                    <div>
+                                      <p>00:48</p>
+                                    </div>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+ 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="card col-4 mt-5 border-0 ">
+                    <p class=" text-info ms-5 p-3" data-bs-toggle="modal" data-bs-target="#registerModal"> <i class="bi bi-file-earmark-plus ms-4"></i>  Add to registration</p>
+                </div> -->
+
+                </div>
+                
+                <div class="row ">
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                        <label>From</label>
+                      <div class="cardss shadow">
+                        <div class="card-body">
+                          
+                          <p class="card-text">12:42</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                        <label>To</label>
+                        <div class="cardss shadow">
+                          <div class="card-body">
+                            
+                            <p class="card-text">13:04</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-sm-4">
+                        <label>Duration</label>
+                      <div class="cardss shadow">
+                        <div class="card-body">
+                          
+                          <p class="card-text">00:22</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                <label class="text-secondary mb-2 mt-3">Client Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Name" value="P. Nilsen"  aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><img src="x-lg.svg" height="20px"></span>
+                </div>
+
+ 
+                <label class="text-secondary mb-2 mt-3">Case Number</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Number" value="Case Number"  aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><img src="x-lg.svg" height="20px"></span>
+                </div>
+               
+                <label class="text-secondary mb-2 mt-3">Case</label>
+                  <select class="form-select text-secondary " aria-label="select-case">
+                    <option selected >Select case name</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    </select>
+ 
+ 
+                <label class="text-secondary mb-2 mt-3">Type of Work</label>
+                  <select class="form-select text-secondary " aria-label="select-case">
+                    <option selected >Select the type of work</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+ 
+                  <label class="text-secondary mb-2 mt-3">Description</label>
+                  <div class="input-group  position-relative text-box" >
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Type in/Record the description"></textarea>
+                    <div class="text-secondary text-content position-absolute bottom-0 end-0 "  >
+                      Number of symbols 0/250
+                      <img src="mic-fill.svg">
+                    </div>
+                  </div>
+           
+                  <div class="d-flex mt-4">
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="modal" data-bs-target="#registerModal"><img src="plus-circle.svg" height="20px" class="me-2 bg-light " alt="File Icon">Register</button>
+                    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                          <div class="modal-content border-0">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title text-center align-middle" id="registerModalLabel">Add to registration</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+     
+                            <div class="modal-body  border-0">
+                                <div class="card border-0 text-center">
+                                    <p class="align-middle text-secondary fs-4"><i class="bi bi-caret-left"></i> 15.11.2023 <i class="bi bi-caret-right"></i></p>
+                                  </div>
+             
+                           
+                                <div class="container-fluid ">
+                                <div class="cards mt-5 row shadow col1">
+                                    <div class="card-body" style="border-left: 5px solid orange;">
+                                      <ul class="lf float-start">
+                                        <div class="vl hi1 me-1 border-warning float-start"></div>
+                                      <h5 class="card-title fs-5"><b>13:00 - 14:15</b></h5>
+                                      <p class="card-text text-warning">Missing Information<br/></p>
+                                      </ul>
+                                        <ul class="rt float-end pt-6">
+                                            <div>
+                                            <p>02:24</p>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                  </div>
+     
+                                  <div class="cards mt-4 row shadow col1">
+                                    <div class="card-body" style="border-left: 5px solid blue;">
+                                      <ul class="lf float-start">
+                                        <div class="vl hi2 me-1 border-info float-start" ></div>
+                                        <h5 class="card-title fw-bold fs-5">12:10 - 12:58 / 15:40 - 16:00</h5>
+                                        <p class="card-text">
+                                            13446 - O.Jeppesen <br />
+                                            Court Hearing - Being present at c.. <br />
+                                            <i class="bi bi-folder-plus"></i> 2 registrations
+                                        </p>
+                                      </ul>
+                                      <ul class="rt float-end pt-6">
+                                        <div>
+                                          <p>01:08</p>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                         
+                                  <div class="cards mt-4 row shadow col1">
+                                    <div class="card-body" style="border-left: 5px solid blue;" >
+                                      <ul class="lf float-start">
+                                        <div class="vl hi3 me-1 border-info float-start"></div>
+                                      <h5 class="card-title fw-bold fs-5">12:10 - 12:58</h5>
+                                      <p class="card-text">
+                                        13446 - O.Jeppesen <br />
+                                        Court Hearing - Being present at c.. <br />
+                                      </p>
+                                    </ul>
+                                    <ul class="rt float-end pt-6" >
+                                      <div>
+                                        <p>00:48</p>
+                                      </div>
+                                    </ul>
+                                    </div>
+                                   </div>
+                                 
+                         
+                                  <div class="cards mt-4 row shadow col1">
+                                    <div class="card-body" style="border-left: 5px solid blue;">
+                                      <ul class="lf float-start pt-6">
+                                        <div class="vl hi3 me-1 border-info float-start"></div>
+                                      <h5 class="card-title fw-bold fs-5">12:10 - 12:58</h5>
+                                      <p class="card-text">
+                                        13446 - O.Jeppesen <br />
+                                        Court Hearing - Being present at c.. <br />
+                                      </p>
+                                      </ul>
+                                      <ul class="rt float-end">
+                                        <div>
+                                          <p>00:48</p>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+     
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+           
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        </div>
+    </body>
+    </html>

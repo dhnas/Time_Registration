@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EG legal</title>
+    <link rel="icon" href="./img/getsitelogo1.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="overview.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div class="row shadow col1">
+                <div class="col-2"> <img src="https://global.eg.dk/siteassets/media/logos/eg-logo.svg" alt="eg logo"> </div>
+                <div class="col"> <p>Legal Solutions</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-house-fill"></i> </div>
+                <div class="col"> <p>Home</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-plus-circle"></i> </div>
+                <div class="col"> <p>Register Time</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-calendar"></i> </div>
+                <div class="col"> <p>Calender</p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-bar-chart"></i> </div>
+                <div class="col"> <p>Overview</p></div>
+              </div>
+              <ul class=" navbar-nav flex-column" style="margin-top: 350px; margin-left: 1px;">
+              <div class="row col1 merge">
+                <div class="col-2"> <i class="bi bi-bell-fill"></i> </div>
+                <div class="col"> <p>Notification<sup>3</sup></p></div>
+              </div>
+ 
+              <div class="row col1">
+                <div class="col-2"> <i class="bi bi-person-circle"></i> </div>
+                <div class="col"> <p>Camline Jansen</p> </div>
+              </div>
+             
+        </div> 
+        <div class="col-9">
+            <div class="row">
+                <div class="container">
+                    <button type="button " class="btn btn-grey " style="margin-left: 350px;" id="showModalBtn">
+                      December 2023
+                    </button>
+                  </div>
+                  
+                  <!-- Modal -->
+                  <div class="modal" id="exampleModal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title float-start">2023</h5>
+                          
+                          <p class="modal-title float-end" style="margin-left: 400px; width: 20px;">&lt;&gt;</p>
+
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>Jan</td>
+                                        <td>Feb</td>
+                                        <td>Mar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apr</td>
+                                        <td>May</td>
+                                        <td>Jun</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jul</td>
+                                        <td>Aug</td>
+                                        <td>Sep</td>
+                                    </tr>
+                                    <tr class="w">
+                                        <td>Oct</td>
+                                        <td>Nov</td>
+                                        <td><button type="button" class="btn btn-primary" aria-readonly="true">Dec</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-primary">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Bootstrap Bundle with Popper -->
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                  
+                  <script>
+                    // JavaScript to show the modal when the button is clicked
+                    document.getElementById('showModalBtn').addEventListener('click', function () {
+                      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+                      myModal.show();
+                    });
+                    
+                  </script>
+                  
+
+                <br\>
+                <div>
+                  <div class="card" style="width:54rem">
+                    <div class="card-body">
+                      <h3 class="card-title">Total Hours December</h3>
+                      <div class="rc">
+                        <p><b>116,30</b><span>/240</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                      
+                    </div>
+                    <div class="end">
+                        <div class="r">
+                            <ul>
+                                <li>Billable Hours</li>
+                                <li>Non-billable Hours</li>
+                            </ul>
+                        </div>
+                        <div class="l">
+                            <ul>
+                                <li><b>116.30</b></li>
+                                <li><b>00.00</b></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="end">
+                      <div class="r">
+                          <ul>
+                              <li><h3>Earnings</h3></li>
+                              <li>Billable Hours</li>
+                              <li>Non-billable Hours</li>
+                          </ul>
+                      </div>
+                      <div class="l">
+                          <ul>
+                              <li><b>116.30</b></li>
+                              <li><b>00.00</b></li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <hr>
+                  <div class="end">
+                    <div class="r">
+                        <ul>
+                            <li><h3>Invoicing</h3></li>
+                            <li>Invoiced Hours</li>
+                            <li>Uninvoiced Hours</li>
+                        </ul>
+                    </div>
+                    <div class="l">
+                        <ul>
+                            <li><b>116.30</b></li>
+                            <li><b>00.00</b></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+                  <h3>3 Month Review</h3>
+                  <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+                      
+                      <li class="nav-item" role="presentation">
+                        <a
+                          data-mdb-tab-init
+                          class="nav-link active"
+                          id="ex2-tab-1"
+                          href="#ex2-tabs-1"
+                          role="tab"
+                          aria-controls="ex2-tabs-1"
+                          aria-selected="true"
+                          >Hours</a
+                        >
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          data-mdb-tab-init
+                          class="nav-link"
+                          id="ex2-tab-2"
+                          href="#ex2-tabs-2"
+                          role="tab"
+                          aria-controls="ex2-tabs-2"
+                          aria-selected="false"
+                          >Earnings</a
+                        >
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          data-mdb-tab-init
+                          class="nav-link"
+                          id="ex2-tab-3"
+                          href="#ex2-tabs-3"
+                          role="tab"
+                          aria-controls="ex2-tabs-3"
+                          aria-selected="false"
+                          >Invoicing</a
+                        >
+                      </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="ex2-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="ex2-tabs-1"
+                        role="tabpanel"
+                        aria-labelledby="ex2-tab-1">
+                        
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="ex2-tabs-2"
+                        role="tabpanel"
+                        aria-labelledby="ex2-tab-2"
+                      >
+                        
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="ex2-tabs-3"
+                        role="tabpanel"
+                        aria-labelledby="ex2-tab-3"
+                      >
+                        
+                      </div>
+                    </div>
+   
+               </div>
+               
+   
+             
+   
+              <div class="row">
+                  
+                  <canvas id="barGraph" class="bar-graph"></canvas>
+              </div>
+         
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                  const ctx = document.getElementById('barGraph').getContext('2d');
+                  const barGraph = new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                          labels: ['October', '   ', 'November', '     ', 'December', '     '],
+                          datasets: [{
+                              label: ['# Billable','# Non-Billable'],
+                              
+                              data: [153, 0, 148, 5, 116.30, 0],
+                              backgroundColor: [
+                                  'rgba(0, 0, 255, 0.4)',
+                                  'rgba(128, 128, 128, 0.2)',
+                                  'rgba(0, 0, 255, 0.4)',
+                                  'rgba(128, 128, 128, 0.2)',
+                                  'rgba(0, 0, 255, 0.4)',
+                                  'rgba(128, 128, 128, 0.2)'
+                              ],
+                              borderColor: [
+                                  'rgba(0, 0, 255, 0.4)',
+                                  'rgba(128, 128, 128, 0.2)',
+                                  'rgba(0, 0, 255, 0.4)',
+                                  'rgba(128, 128, 128, 0.2)',
+                                  'rgba(0, 0, 255, 0.4)',
+                                  'rgba(128, 128, 128, 0.2)'
+                              ],
+                              borderWidth: 1
+                          }]
+                      },
+                      options: {
+                          scales: {
+                              y: {
+                                  beginAtZero: true
+                              }
+                          }
+                      }
+                  });
+              </script>
+   
+          </div>
+      </div>
+    </body>
+    </html>

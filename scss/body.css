@@ -43,15 +43,15 @@
 .previous {
   position: absolute;
   top: 0%;
-  left: 28%;
-  bottom: 17%;
+  left: 8%;
+  bottom: 50%;
 }
 
 .next {
   position: absolute;
-  top: 39%;
-  left: 28%;
-  bottom: 25%;
+  top: 24%;
+  left: 10%;
+  bottom: 27%;
 }
 
 .warn {
@@ -61,4 +61,21 @@
 .warn-mar {
   margin-left: 2%;
   margin-top: 1%;
+}
+
+.card11 {
+  position: relative;
+}
+
+.card12 {
+  position: absolute;
+  top: 40%;
+  left: 88%;
+}
+
+.card13 {
+  position: fixed;
+  z-index: 1;
+  top: 92%;
+  left: 96%;
 }/*# sourceMappingURL=body.css.map */
